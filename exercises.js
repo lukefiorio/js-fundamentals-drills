@@ -206,6 +206,11 @@ console.log(splitString('testing...'));
  */
 var lengthOfLast;
 
+lengthOfLast = function(arr) {
+  return countStrings(arr)[arr.length-1];
+}
+console.log(lengthOfLast(['str1','longer string','1','dunzo']));
+
 /* #sumBelowTen
  *
  * Takes in an array of numbers and returns the sum of all numbers below 10.
