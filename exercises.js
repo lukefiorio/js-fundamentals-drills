@@ -74,6 +74,10 @@ console.log(arrayLength([1,2]));
  */
 var countAll;
 
+countAll = function(arr) {
+  return arr.reduce(add);
+}
+
 /* #countStrings
  *
  * Takes in an array of strings and returns an array of string lengths.
