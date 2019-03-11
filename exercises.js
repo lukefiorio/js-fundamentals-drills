@@ -537,6 +537,18 @@ arrayToObject = function(arr) {
  */
 var arraysToObject;
 
+arraysToObject = function (arr1,arr2) {
+  obj = {
+  }
+  for (var i=0;i<arr1.length;i++) {
+    obj[arr1[i]] = arr2[i];
+  }
+  return obj;
+}
+
+console.log(arraysToObject(['yes','no','test'],[2,3,4]));
+
+
 /* #objectsToTuples
  *
  * takes in two objects and returns an array of tuples of the key value pairs of all objects in both arrays.
