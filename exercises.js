@@ -239,6 +239,19 @@ console.log(sumBelowTen([1,2,3,10,11,12,-3]));
  */
 var moreThanTenLetters;
 
+moreThanTenLetters = function(arr) {
+  var strLenArr = countStrings(arr);
+  var strCnt = 0;
+  for (var i=0;i<strLenArr.length;i++) {
+    if (strLenArr[i]>10) {
+      strCnt++;
+    }
+  }
+  return strCnt;
+}
+console.log(moreThanTenLetters(['really long string','shorter string','tiny','short']));
+
+
 /* #multiplyAll
  *
  * Takes in an array of numbers and returns the product of all elements.
