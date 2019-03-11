@@ -636,6 +636,16 @@ arrayToObjectNums = function(arr) {
  */
 var stringToKeys;
 
+stringToKeys = function(str) {
+  obj = {
+  }
+  arr = str.split("");
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = true;
+  }
+  return obj;
+}
+
 /* #charCountMap
  *
  * takes in an array of strings and returns an object with keys set to each element of the array 
