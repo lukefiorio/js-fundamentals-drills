@@ -413,6 +413,13 @@ function makeObjectReverse(value,key) {
  */
 var tupleToObject;
 
+tupleToObject = function(arr) {
+  var obj = {
+    [arr[0]]: arr[1]
+  }
+  return obj;
+}
+
 /* #tupleToObjectReverse
  *
  * Takes in a tuple and returns it into a single key-value pair with second tuple element as key and first tuple element as value.
@@ -421,6 +428,13 @@ var tupleToObject;
  * @return {Object}
  */
 var tupleToObjectReverse;
+
+tupleToObjectReverse = function(arr) {
+  var obj = {
+    [arr[1]]: arr[0]
+  }
+  return obj;
+}
 
 /* #strToKeys
  *
