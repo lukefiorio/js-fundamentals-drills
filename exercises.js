@@ -159,6 +159,15 @@ console.log(objectSize(testObj));
  */
 var createZeroFilledArray;
 
+createZeroFilledArray = function(num) {
+  var zeroArr = [];
+  for (i=0; i<num; i++) {
+    zeroArr.push(0);
+  }
+  return zeroArr;
+}
+console.log(createZeroFilledArray(5));
+
 /* #poppedArray
  *
  * Takes in an array of numbers and returns an array of all but the last element of the array.
