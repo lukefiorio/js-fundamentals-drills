@@ -7,6 +7,14 @@
  */
 var doubleArray;
 
+doubleArray = function(arr) {
+  for (var i=0; i<arr.length; i++) {
+    arr[i] = arr[i]*2;
+  }
+  return arr;
+}
+console.log(doubleArray([1,2,3]));
+
 /* #sumArrays
  *
  * Takes in two arrays of numbers and returns the sum of both arrays.
@@ -364,7 +372,7 @@ var tupleConvertToObject;
 
 
 module.exports = {
-  doubleArray: null,
+  doubleArray: doubleArray,
   sumArrays: null,
   stringCount: null,
   arrayLength: null,
