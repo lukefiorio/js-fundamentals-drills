@@ -379,6 +379,14 @@ getObjectValues = function(arr) {
  */
 var makeObject;
 
+function makeObject(key,value) {
+  var obj = {
+    [key]: value
+  }
+  return obj;
+}
+
+
 /* #makeObjectReverse
  *
  * Takes in two arguments 'value' and 'key' and returns a single key-value pair in an object.
@@ -388,6 +396,13 @@ var makeObject;
  * @return {Object}
  */
 var makeObjectReverse;
+
+function makeObjectReverse(value,key) {
+  var obj = {
+    [key]: value
+  }
+  return obj;
+}
 
 /* #tupleToObject
  *
