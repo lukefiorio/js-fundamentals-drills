@@ -559,6 +559,13 @@ console.log(arraysToObject(['yes','no','test'],[2,3,4]));
  */
 var objectsToTuples;
 
+function objectsToTuples(obj1,obj2) {
+  var objArr1 = objectToArray(obj1);
+  var objArr2 = objectToArray(obj2);
+  return objArr1.concat(objArr2);
+}
+console.log(objectsToTuples(testObj1,testObj2));
+
 /* #mapArrayValues
  *
  * takes in an array of strings and returns an object with keys of the array elements and values all set to True.
