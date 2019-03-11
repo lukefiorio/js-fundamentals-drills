@@ -493,6 +493,20 @@ getKeys = function(obj) {
  */
 var objectToArray;
 
+objectToArray = function(obj) {
+  var objArr=[];
+  //var tupleArr=[undefined,undefined];
+  for (var i=0;i<objectSize(obj);i++) {
+    var tupleArr=[undefined,undefined];
+    tupleArr[0]= getObjectKeys(obj)[i];
+    tupleArr[1]= convertToArray(obj)[i];
+    objArr.push(tupleArr);
+  }
+  return objArr;
+}
+
+console.log(objectToArray(testObj1));
+
 /* #arrayToObject
  *
  * takes in an array and returns an object with keys set to the elements in the array and
