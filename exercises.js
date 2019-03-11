@@ -466,6 +466,10 @@ console.log(strToKeys(['tiger','lion','porcupine','jellyfish']));
  */
 var getValues;
 
+getValues = function(obj) {
+  return convertToArray(obj);
+}
+
 /* #getKeys
  *
  * Takes in an object and returns an array of the object's keys.
@@ -474,6 +478,10 @@ var getValues;
  * @return {Array}
  */
 var getKeys;
+
+getKeys = function(obj) {
+  return getObjectKeys(obj);
+}
 
 /* #objectToArray
  *
