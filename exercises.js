@@ -445,6 +445,18 @@ tupleToObjectReverse = function(arr) {
  */
 var strToKeys;
 
+strToKeys = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = 0;
+  }
+  return obj;
+}
+
+console.log(strToKeys(['tiger','lion','porcupine','jellyfish']));
+
+
 /* #getValues
  *
  * Takes in an object and returns an array of all the object's values.
