@@ -279,6 +279,16 @@ console.log(multiplyAll([2,3,-1,4]));
  */
 var sumAllPositive;
 
+sumAllPositive = function(arr) {
+  for (var i=0;i<arr.length;i++) {
+    if (arr[i]<0) {
+      arr[i]=0;
+    }
+  }
+  return arr.reduce(add);
+}
+console.log(sumAllPositive([1,2,3,10,11,-5,-3]));
+
 /* #stringCountBelowThree
  *
  * Takes in an array of strings and returns the amount of strings that have three characters or less.
