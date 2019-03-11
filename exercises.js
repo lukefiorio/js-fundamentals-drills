@@ -177,6 +177,12 @@ console.log(createZeroFilledArray(5));
  */
 var poppedArray;
 
+poppedArray = function(arr) {
+  arr.pop()
+  return arr;
+}
+console.log(poppedArray([1,2,3,4]));
+
 /* #splitString
  *
  * Takes in a string and returns an array of each individual character in the string.
