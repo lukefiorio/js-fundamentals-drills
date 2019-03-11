@@ -656,6 +656,16 @@ stringToKeys = function(str) {
  */
 var charCountMap;
 
+charCountMap = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = arr[i].length;
+  }
+  return obj;
+}
+
+
 /* #frequencyMap
  *
  * takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.
