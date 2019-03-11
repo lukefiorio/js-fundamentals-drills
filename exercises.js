@@ -128,13 +128,26 @@ convertToArray = function(obj) {
   return valueArr;
 }
 
-var testObj = {
+var testObj1 = {
   key1: 'test',
   key2: [1,2],
   key3: 5,
   key4: undefined
 }
-console.log(convertToArray(testObj));
+var testObj2 = {
+  key21: 'eating',
+  key22: [0,2],
+  key23: null,
+  key24: 7
+}
+var testObj3 = {
+  key1: ['open','sesame'],
+  key2: 3,
+  key3: [0,-1],
+  key4: 'silly'
+}
+
+console.log(convertToArray(testObj1));
 
 /* #objectSize
  *
@@ -148,7 +161,7 @@ var objectSize;
 objectSize = function(obj) {
   return convertToArray(obj).length;
 }
-console.log(objectSize(testObj));
+console.log(objectSize(testObj1));
 
 /* #createZeroFilledArray
  *
@@ -318,6 +331,12 @@ console.log(stringCountBelowThree(['long','too','one','2','11']));
  */
 var countObjects;
 
+countObjects = function(arr) {
+  return arr.length;
+}
+console.log(countObjects([testObj1,testObj2,testObj3]));
+
+
 /* #getObjectKeys
  *
  * Takes in an object and returns an array of all the object's keys.
@@ -326,6 +345,16 @@ var countObjects;
  * @return {Array}
  */
 var getObjectKeys;
+
+getObjectKeys = function(obj) {
+  var keyArr = [];
+  for (var i in obj) {
+    keyArr.push(i);
+  }
+  return keyArr;
+}
+
+console.log(getObjectKeys(testObj1));
 
 /* #getObjectValues
  *
