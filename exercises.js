@@ -220,6 +220,16 @@ console.log(lengthOfLast(['str1','longer string','1','dunzo']));
  */
 var sumBelowTen;
 
+sumBelowTen = function(arr) {
+  for (var i=0;i<arr.length;i++) {
+    if (arr[i]>=10) {
+      arr[i]=0;
+    }
+  }
+  return arr.reduce(add);
+}
+console.log(sumBelowTen([1,2,3,10,11,12,-3]));
+
 /* #moreThanTenLetters
  *
  * Takes in an array of strings and returns the amount of elements that have more than ten letters.
