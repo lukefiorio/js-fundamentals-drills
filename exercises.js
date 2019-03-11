@@ -618,6 +618,15 @@ mapStringCounts = function(arr) {
  */
 var arrayToObjectNums;
 
+arrayToObjectNums = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = true;
+  }
+  return obj;
+}
+
 /* #stringToKeys
  *
  * takes in a string and returns an object whos keys are each letter of the string and all values set to true.
