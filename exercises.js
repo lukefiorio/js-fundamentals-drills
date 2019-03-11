@@ -192,6 +192,11 @@ console.log(poppedArray([1,2,3,4]));
  */
 var splitString;
 
+splitString = function(str) {
+  return str.split('');
+}
+console.log(splitString('testing...'));
+
 /* #lengthOfLast
  *
  * Takes in an array of strings and returns the length of the last string.
