@@ -575,6 +575,15 @@ console.log(objectsToTuples(testObj1,testObj2));
  */
 var mapArrayValues;
 
+mapArrayValues = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = true;
+  }
+  return obj;
+}
+
 /* #mapStringCounts
  *
  * takes in an array of strings and returns an object with key names set to the elements in the array.
