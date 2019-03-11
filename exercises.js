@@ -365,6 +365,10 @@ console.log(getObjectKeys(testObj1));
  */
 var getObjectValues;
 
+getObjectValues = function(arr) {
+  return convertToArray(arr);
+}
+
 /* #makeObject
  *
  * Takes in two arguments 'key' and 'value' and returns a single key-value pair in an object.
