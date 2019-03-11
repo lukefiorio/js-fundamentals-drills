@@ -239,15 +239,19 @@ console.log(sumBelowTen([1,2,3,10,11,12,-3]));
  */
 var moreThanTenLetters;
 
-moreThanTenLetters = function(arr) {
-  var strLenArr = countStrings(arr);
-  var strCnt = 0;
-  for (var i=0;i<strLenArr.length;i++) {
-    if (strLenArr[i]>10) {
-      strCnt++;
+function cntItemsAboveVal(arr,num) {
+  var cnt = 0;
+  for (var i=0;i<arr.length;i++) {
+    if (arr[i]>num) {
+      cnt++;
     }
   }
-  return strCnt;
+  return cnt;
+}
+
+moreThanTenLetters = function(arr) {
+  var strLenArr = countStrings(arr);
+  return cntItemsAboveVal(strLenArr,10);
 }
 console.log(moreThanTenLetters(['really long string','shorter string','tiny','short']));
 
@@ -297,6 +301,13 @@ console.log(sumAllPositive([1,2,3,10,11,-5,-3]));
  * @return {Number}
  */
 var stringCountBelowThree;
+
+stringCountBelowThree = function(arr) {
+  var strLenArr = countStrings(arr);
+  var cntLenOver3 = cntItemsAboveVal(strLenArr,3);
+  return strLenArr.length-cntLenOver3;
+}
+console.log(stringCountBelowThree(['long','too','one','2','11']));
 
 /* #countObjects
  *
