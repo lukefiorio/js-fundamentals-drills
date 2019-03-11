@@ -517,6 +517,15 @@ console.log(objectToArray(testObj1));
  */
 var arrayToObject;
 
+arrayToObject = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    obj[arr[i]] = false;
+  }
+  return obj;
+}
+
 /* #arraysToObject
  *
  * takes in two arrays, the first array elements will be keys of an object and second array elements 
