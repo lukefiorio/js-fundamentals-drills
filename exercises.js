@@ -13,7 +13,7 @@ doubleArray = function(arr) {
   }
   return arr;
 }
-console.log(doubleArray([1,2,3]));
+//console.log(doubleArray([1,2,3]));
 
 /* #sumArrays
  *
@@ -35,7 +35,7 @@ sumArrays = function(arr1,arr2) {
   var sum2 = arr2.reduce(add);
   return sum1+sum2;
 }
-console.log(sumArrays([1,2,3],[11,12,13,14,15]));
+//console.log(sumArrays([1,2,3],[11,12,13,14,15]));
 
 /* #stringCount
  *
@@ -49,7 +49,7 @@ var stringCount;
 stringCount = function(str) {
   return str.length;
 }
-console.log(stringCount('testing...'));
+//console.log(stringCount('testing...'));
 
 
 /* #arrayLength
@@ -63,7 +63,7 @@ var arrayLength;
 arrayLength = function(arr) {
   return arr.length;
 }
-console.log(arrayLength([1,2]));
+//console.log(arrayLength([1,2]));
 
 /* #countAll
  *
@@ -94,7 +94,7 @@ countStrings = function (arr) {
   }
   return strLenArr;
 }
-console.log(countStrings(['str1','longer string','1','dunzo']));
+//console.log(countStrings(['str1','longer string','1','dunzo']));
 
 
 /* #countAllStrings
@@ -109,7 +109,7 @@ var countAllStrings;
 countAllStrings = function(arr) {
   return countStrings(arr).reduce(add);
 }
-console.log(countAllStrings(['str1','longer string','1','dunzo']));
+//console.log(countAllStrings(['str1','longer string','1','dunzo']));
 
 /* #convertToArray
  *
@@ -147,7 +147,7 @@ var testObj3 = {
   key4: 'silly'
 }
 
-console.log(convertToArray(testObj1));
+//console.log(convertToArray(testObj1));
 
 /* #objectSize
  *
@@ -161,7 +161,7 @@ var objectSize;
 objectSize = function(obj) {
   return convertToArray(obj).length;
 }
-console.log(objectSize(testObj1));
+//console.log(objectSize(testObj1));
 
 /* #createZeroFilledArray
  *
@@ -179,7 +179,7 @@ createZeroFilledArray = function(num) {
   }
   return zeroArr;
 }
-console.log(createZeroFilledArray(5));
+//console.log(createZeroFilledArray(5));
 
 /* #poppedArray
  *
@@ -194,7 +194,7 @@ poppedArray = function(arr) {
   arr.pop()
   return arr;
 }
-console.log(poppedArray([1,2,3,4]));
+//console.log(poppedArray([1,2,3,4]));
 
 /* #splitString
  *
@@ -208,7 +208,7 @@ var splitString;
 splitString = function(str) {
   return str.split('');
 }
-console.log(splitString('testing...'));
+//console.log(splitString('testing...'));
 
 /* #lengthOfLast
  *
@@ -222,7 +222,7 @@ var lengthOfLast;
 lengthOfLast = function(arr) {
   return countStrings(arr)[arr.length-1];
 }
-console.log(lengthOfLast(['str1','longer string','1','dunzo']));
+//console.log(lengthOfLast(['str1','longer string','1','dunzo']));
 
 /* #sumBelowTen
  *
@@ -241,7 +241,7 @@ sumBelowTen = function(arr) {
   }
   return arr.reduce(add);
 }
-console.log(sumBelowTen([1,2,3,10,11,12,-3]));
+//console.log(sumBelowTen([1,2,3,10,11,12,-3]));
 
 /* #moreThanTenLetters
  *
@@ -266,7 +266,7 @@ moreThanTenLetters = function(arr) {
   var strLenArr = countStrings(arr);
   return cntItemsAboveVal(strLenArr,10);
 }
-console.log(moreThanTenLetters(['really long string','shorter string','tiny','short']));
+//console.log(moreThanTenLetters(['really long string','shorter string','tiny','short']));
 
 
 /* #multiplyAll
@@ -285,7 +285,7 @@ multiplyAll = function(arr) {
   }
   return prod;
 }
-console.log(multiplyAll([2,3,-1,4]));
+//console.log(multiplyAll([2,3,-1,4]));
 
 /* #sumAllPositive
  *
@@ -304,7 +304,7 @@ sumAllPositive = function(arr) {
   }
   return arr.reduce(add);
 }
-console.log(sumAllPositive([1,2,3,10,11,-5,-3]));
+//console.log(sumAllPositive([1,2,3,10,11,-5,-3]));
 
 /* #stringCountBelowThree
  *
@@ -320,7 +320,7 @@ stringCountBelowThree = function(arr) {
   var cntLenOver3 = cntItemsAboveVal(strLenArr,3);
   return strLenArr.length-cntLenOver3;
 }
-console.log(stringCountBelowThree(['long','too','one','2','11']));
+//console.log(stringCountBelowThree(['long','too','one','2','11']));
 
 /* #countObjects
  *
@@ -334,7 +334,7 @@ var countObjects;
 countObjects = function(arr) {
   return arr.length;
 }
-console.log(countObjects([testObj1,testObj2,testObj3]));
+//console.log(countObjects([testObj1,testObj2,testObj3]));
 
 
 /* #getObjectKeys
@@ -354,7 +354,7 @@ getObjectKeys = function(obj) {
   return keyArr;
 }
 
-console.log(getObjectKeys(testObj1));
+//console.log(getObjectKeys(testObj1));
 
 /* #getObjectValues
  *
@@ -454,7 +454,7 @@ strToKeys = function(arr) {
   return obj;
 }
 
-console.log(strToKeys(['tiger','lion','porcupine','jellyfish']));
+//console.log(strToKeys(['tiger','lion','porcupine','jellyfish']));
 
 
 /* #getValues
@@ -505,7 +505,7 @@ objectToArray = function(obj) {
   return objArr;
 }
 
-console.log(objectToArray(testObj1));
+//console.log(objectToArray(testObj1));
 
 /* #arrayToObject
  *
@@ -546,7 +546,7 @@ arraysToObject = function (arr1,arr2) {
   return obj;
 }
 
-console.log(arraysToObject(['yes','no','test'],[2,3,4]));
+//console.log(arraysToObject(['yes','no','test'],[2,3,4]));
 
 
 /* #objectsToTuples
@@ -564,7 +564,7 @@ function objectsToTuples(obj1,obj2) {
   var objArr2 = objectToArray(obj2);
   return objArr1.concat(objArr2);
 }
-console.log(objectsToTuples(testObj1,testObj2));
+//console.log(objectsToTuples(testObj1,testObj2));
 
 /* #mapArrayValues
  *
@@ -704,7 +704,7 @@ var testStrArr = [
   'string9',
   'string9'
 ]
-console.log(frequencyMap(testStrArr));
+//console.log(frequencyMap(testStrArr));
 
 /* #tupleConvertToObject
  *
@@ -724,7 +724,7 @@ tupleConvertToObject = function(arr) {
   }
   return obj;
 }
-console.log(tupleConvertToObject([['a',1],['b',2],['c',3]]));
+//console.log(tupleConvertToObject([['a',1],['b',2],['c',3]]));
 
 module.exports = {
   doubleArray: doubleArray,
