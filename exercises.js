@@ -261,6 +261,15 @@ console.log(moreThanTenLetters(['really long string','shorter string','tiny','sh
  */
 var multiplyAll;
 
+multiplyAll = function(arr) {
+  var prod = 1;
+  for (var i=0;i<arr.length;i++) {
+    prod*=arr[i];
+  }
+  return prod;
+}
+console.log(multiplyAll([2,3,-1,4]));
+
 /* #sumAllPositive
  *
  * Takes in an array of numbers and returns the sum of all non-negative numbers.
