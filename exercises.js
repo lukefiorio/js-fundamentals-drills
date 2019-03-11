@@ -87,6 +87,16 @@ countAll = function(arr) {
  */
 var countStrings;
 
+countStrings = function (arr) {
+  var strLenArr = [];
+  for (var i=0;i<arr.length;i++) {
+    strLenArr.push(arr[i].length);
+  }
+  return strLenArr;
+}
+console.log(countStrings(['str1','longer string','1','dunzo']));
+
+
 /* #countAllStrings
  *
  * Takes in an array of strings and returns the sum of all string lengths.
@@ -95,6 +105,11 @@ var countStrings;
  * @return {Number}
  */
 var countAllStrings;
+
+countAllStrings = function(arr) {
+  return countStrings(arr).reduce(add);
+}
+console.log(countAllStrings(['str1','longer string','1','dunzo']));
 
 /* #convertToArray
  *
