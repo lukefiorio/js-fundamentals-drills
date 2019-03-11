@@ -595,6 +595,19 @@ mapArrayValues = function(arr) {
  */
 var mapStringCounts;
 
+mapStringCounts = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    if (arr[i].length>=5) {
+      obj[arr[i]] = true;
+    } else {
+      obj[arr[i]] = false;
+    }
+  }
+  return obj;
+}
+
 /* #arrayToObjectNums
  *
  * takes in an array of numbers and returns an object with keys set to 
