@@ -675,6 +675,37 @@ charCountMap = function(arr) {
  */
 var frequencyMap;
 
+
+var arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+var counts = {};
+
+for (var i = 0; i < arr.length; i++) {
+  var num = arr[i];
+  counts[num] = (counts[num] || 0) + 1;
+}
+
+frequencyMap = function(arr) {
+  obj = {
+  }
+  for (var i=0;i<arr.length;i++) {
+    var arrItem = arr[i]
+    // how does it this know how to count?
+    obj[arrItem] = (obj[arrItem] || 0) + 1;
+  }
+  return obj;
+}
+
+var testStrArr = [
+  'string1',
+  'string3',
+  'string2',
+  'string1',
+  'string1',
+  'string9',
+  'string9'
+]
+console.log(frequencyMap(testStrArr));
+
 /* #tupleConvertToObject
  *
  * takes in an array of tuples and and returns an object whos keys are 
