@@ -120,6 +120,22 @@ console.log(countAllStrings(['str1','longer string','1','dunzo']));
  */
 var convertToArray;
 
+convertToArray = function(obj) {
+  var valueArr = [];
+  for (var i in obj) {
+    valueArr.push(obj[i]);
+  }
+  return valueArr;
+}
+
+var testObj = {
+  key1: 'test',
+  key2: [1,2],
+  key3: 5,
+  key4: undefined
+}
+console.log(convertToArray(testObj));
+
 /* #objectSize
  *
  * Takes in an object and returns the number of key value pairs in the object.
