@@ -145,6 +145,11 @@ console.log(convertToArray(testObj));
  */
 var objectSize;
 
+objectSize = function(obj) {
+  return convertToArray(obj).length;
+}
+console.log(objectSize(testObj));
+
 /* #createZeroFilledArray
  *
  * Takes in a number and fills an array with that number of zeroes.
